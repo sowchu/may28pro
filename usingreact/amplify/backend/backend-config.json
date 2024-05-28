@@ -1,0 +1,90 @@
+{
+  "api": {
+    "newapi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "devtest"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "auth": {
+    "may28pro": {
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito",
+      "serviceType": "managed"
+    }
+  },
+  "function": {
+    "devtest": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "sowlu": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_devtest_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "devtest"
+        }
+      ]
+    },
+    "AMPLIFY_function_devtest_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "devtest"
+        }
+      ]
+    },
+    "AMPLIFY_function_sowlu_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "sowlu"
+        }
+      ]
+    },
+    "AMPLIFY_function_sowlu_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "sowlu"
+        }
+      ]
+    }
+  }
+}

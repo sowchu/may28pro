@@ -1,0 +1,34 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-may28pro-dev-2a97e-authRole",
+      "UnauthRoleArn": "arn:aws:iam::975050077840:role/amplify-may28pro-dev-2a97e-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::975050077840:role/amplify-may28pro-dev-2a97e-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-may28pro-dev-2a97e-deployment",
+      "UnauthRoleName": "amplify-may28pro-dev-2a97e-unauthRole",
+      "StackName": "amplify-may28pro-dev-2a97e",
+      "StackId": "arn:aws:cloudformation:us-east-1:975050077840:stack/amplify-may28pro-dev-2a97e/b52ef0f0-1cdc-11ef-833a-12411bf0d7d1",
+      "AmplifyAppId": "de9hxfi7vkp8j",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-may28pro-dev-2a97e-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    },
+    "categories": {
+      "function": {
+        "devtest": {
+          "deploymentBucketName": "amplify-may28pro-dev-2a97e-deployment",
+          "s3Key": "amplify-builds/devtest-5a6348726e7544713767-build.zip"
+        },
+        "sowlu": {
+          "deploymentBucketName": "amplify-may28pro-dev-2a97e-deployment",
+          "s3Key": "amplify-builds/sowlu-32795973736f304c386f-build.zip"
+        }
+      },
+      "auth": {
+        "may28pro": {}
+      },
+      "api": {
+        "newapi": {}
+      }
+    }
+  }
+}
